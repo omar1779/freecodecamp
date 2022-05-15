@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeCodeCamp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Zen+Loop&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-title">
+        <h1 id="title">CoffeeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <div class="container-form">
+        <form id="survey-form">
+            <div>
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your name T^T" required>
+            </div>
+            <div>
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email UnU" required>
+            </div>
+            <div>
+                <label id="number-label" for="number">coffee consumed daily</label>
+                <input id="number" type="number" placeholder="Enter your number :) " min="0" max="10" required>
+            </div>
+            <div>
+                <p id="title-select">Do you what type the coffee like ?</p>
+                <select name="coffee" id="dropdown">
+                    <option disabled selected >type coffee</option>
+                    <option value="coffee">black</option>
+                    <option value="coffee">latte</option>
+                    <option value="coffee">cappuccino</option>
+                    <option value="coffee">americano</option>
+                    <option value="coffee">espresso</option>
+                </select>
+            </div>
+            <div>
+                <p id="p2">how do you prefer coffee?</p>
+                <label for="caffeinated" >
+                    <input type="radio" name="how do you prefer coffee?" value="caffeinated" >
+                    caffeinated coffee?
+                    <input type="radio" name="how do you prefer coffee?" value="decaffeinated" >
+                    decaffeinated coffee?
+                </label>
+            </div>
+            <div>
+                <p id="p2">Sugar?</p>
+                <label for="suggar">
+                    <input type="checkbox" name="suggar" value="suggar">
+                    White sugar
+                    <input type="checkbox" name="suggar" value="suggar">
+                    No sugar
+                </label>
+            </div>
+            <div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Additional comment"></textarea>
+                <button id="submit" type="submit">submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
